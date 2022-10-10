@@ -1,0 +1,56 @@
+.accountinformation {
+    background-color: var(--background-tertiary);
+    width: 30%;
+    height: 40%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.accounts {
+    background-color: var(--background-tertiary);
+    width: 30%;
+    height: calc(60% - 10px);
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+.transactions {
+    background-color: var(--background-tertiary);
+    height: 100%;
+    position: absolute;
+    float: right;
+    width: calc(70% - 20px);
+    right: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+/* Account information block */
+
+.accountinformation .accountname {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px - 50px - 10px);
+    height: 50px;
+}
+
+.accountinformation .editbutton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: unset;
+}
+
+.accountinformation .editbutton:hover {
+    background-color: var(--background-primary);
+    border-radius: 10px;
+}
+
+.accountinformation .editicon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
