@@ -1,0 +1,18 @@
+@import url("./DiscordColors.css");
+@import url("../font/index.css");
+
+html, body {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    font-family: Inter;
+    height: calc(100% - 20px);
+    margin: 0;
+}
+
+input {
+    border: 0;
+    padding: 0;
+    border-radius: 10px;
+    background-color: var(--chat-background);
+    color: var(--text-normal);
+}
