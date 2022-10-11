@@ -8,7 +8,7 @@ if (!location.hash) {
 
 async function ReloadPage(Hash) {
     const Frame = document.getElementById("mainframe")
-    var Path = `${location.origin}/pages${Hash.slice(1)}`
+    var Path = `${location.protocol}///${location.host}/pages${Hash.slice(1)}`
     Frame.src = Path
     p(Path)
 }
