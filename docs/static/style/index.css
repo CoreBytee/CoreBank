@@ -12,7 +12,30 @@ html, body {
 input {
     border: 0;
     padding: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--chat-background);
     color: var(--text-normal);
+}
+
+body {
+    font-size: 100%;
+}
+  
+h1 {
+    font-size: 2.5em;
+}
+  
+h2 {
+    font-size: 1.875em;
+}
+  
+p, a, input {
+    font-size: 0.875em;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
