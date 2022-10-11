@@ -1,5 +1,6 @@
 @import url("./DiscordColors.css");
 @import url("../font/index.css");
+@import url("./Buttons.css");
 
 html, body {
     background-color: var(--background-primary);
