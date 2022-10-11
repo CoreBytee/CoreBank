@@ -17,12 +17,28 @@
     </head>
     <body>
         <div class="accountinformation">
-            <input type="text" value="Account name" class="accountname readonlyhide" readonly>
             <button class="editbutton"><img src="/static/image/icon/pen-solid.svg" alt="" class="editicon"></button>
-            <input type="text" value="Account description" class="accountdescription readonlyhide">
+            <input type="text" value="Account name" class="accountname readonlyhide" >
+            <a class="accountdescription">CRBN 0001234567 CB02</a><br>
+            <a class="balancedisplay">Balance: 0000.00</a>
+            <button class="button button-primary" id="accountinfobutton">Transfer money</button>
         </div>
         <div class="accounts">
-
+            <div class="accountscontainer">
+                <a class="accountheader">Personal accounts</a>
+                <div class="account">
+                    <img src="/static/image/icon/wallet-solid.svg" class="accountimage">
+                    <a class="accountname">Account Name</a>
+                    <a class="accountnumber">CRBN 0001234567 CB02</a>
+                    <a class="accountbalance">0000.00</a>
+                </div>
+                <div class="account">
+                    <img src="/static/image/icon/sack-dollar-solid.svg" class="accountimage">
+                    <a class="accountname">Account Name</a>
+                    <a class="accountnumber">CRBN 0001234567 CB02</a>
+                    <a class="accountbalance">0000.00</a>
+                </div>
+            </div>
         </div>
         <div class="transactions">
 

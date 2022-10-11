@@ -1,28 +1,28 @@
 .accountinformation {
     background-color: var(--background-tertiary);
+    position: relative;
     width: 30%;
     height: 40%;
     border-radius: 20px;
-    position: relative;
 }
 
 .accounts {
     background-color: var(--background-tertiary);
+    position: absolute;
     width: 30%;
     height: calc(60% - 10px);
-    position: absolute;
     bottom: 0;
     border-radius: 20px;
 }
 
 .transactions {
     background-color: var(--background-tertiary);
-    height: 100%;
     position: absolute;
-    float: right;
+    height: 100%;
     width: calc(70% - 20px);
     right: 0;
     top: 0;
+    float: right;
     border-radius: 20px;
 }
 
@@ -32,22 +32,20 @@
     background-color: unset;
 }
 
-.accountinformation .accountname {
+.accountinformation .editbutton {
+    background-color: unset;
+    height: 20%;
+    width: calc(20% - 20px);
     margin-top: 20px;
-    margin-left: 20px;
-    width: calc(100% - 40px - 50px - 10px);
-    height: 50px;
-    font-size: 120%;
+    margin-right: 20px;
+    float: right;
+    border: 0;
 }
 
-.accountinformation .editbutton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border: 0;
-    background-color: unset;
+.accountinformation .editicon {
+    height: 80%;
+    width: 80%;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
 .accountinformation .editbutton:hover {
@@ -55,11 +53,88 @@
     border-radius: 10px;
 }
 
-.accountinformation .editicon {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+.accountinformation .accountname {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: calc(80% - 40px);
+    height: 20%;
+    font-size: 120%;
 }
 
 .accountinformation .accountdescription {
     margin-left: 20px;
+    margin-top: 10px;
+    display: inline-block;
     width: calc(100% - 40px);
+    height: 10%;
+    font-size: 100%;
+}
+
+.accountinformation .balancedisplay {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 120%;
+}
+
+.accountinformation .button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
+/* Account list */
+.accountscontainer {
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow-y: auto;
+}
+
+.accountheader {
+    width: 100%;
+    display: inline-block;
+    font-size: 120%;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.account {
+    background-color: var(--background-secondary);
+    height: 75px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.account .accountimage {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    height: 100%;
+    width: 30px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.account .accountname {
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+}
+
+.account .accountnumber {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 20px;
+}
+
+.account .accountbalance {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    right: 0px;
+    margin-right: 20px;
+    line-height: 75px;
 }
