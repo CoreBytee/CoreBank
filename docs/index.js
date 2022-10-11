@@ -1,18 +1,29 @@
 p(location.hash)
 
-const Hash = location.hash
-if (!Hash) {
+if (!location.hash) {
     p("No hash found")
     location.hash = "#/accounts"
     location.reload()
 }
 
+async function ReloadPage(Hash) {
+    const Frame = document.getElementById("mainframe")
+    var Path = `${location.origin}/pages${Hash.slice(1)}`
+    Frame.src = Path
+    p(Path)
+}
+
 window.addEventListener(
     "load",
     async function() {
-        const Frame = document.getElementById("mainframe")
-        var Path = `/pages${Hash.slice(1)}`
-        p(Path)
-        Frame.src = Path
+        await ReloadPage(location.hash)
     }
+)
+
+addEventListener(
+    "hashchange",
+    async function(E) {
+        ReloadPage(new URL(E.newURL).hash)
+    },
+    true
 )
