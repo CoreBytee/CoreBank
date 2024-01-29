@@ -1,0 +1,27 @@
+{
+    "Id": "CoreBank",
+    "Name": "CoreBank",
+    "Description": "CoreBank",
+    "Version": "2.0.0",
+
+    "Authors": {
+        "Developers": [
+            "CoreByte"
+        ],
+        "Contributors": []
+    },
+
+    "Contact": {
+        "Website": "https://banking.corebyte.me",
+        "Source": "",
+        "Socials": {}
+    },
+
+    "Dependencies": [
+
+    ],
+
+    "Entrypoints": {
+        "Main": "me.corebyte.banking"
+    }
+}
